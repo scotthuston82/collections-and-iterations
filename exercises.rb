@@ -17,9 +17,9 @@ movies = {
 }
 
 cities = {
-  new_york: "14 million",
-  toronto: "3.2 million",
-  london: "5.6 million"
+  new_york: 14000000,
+  toronto: 3200000,
+  london: 5600000
 }
 
 people = {
@@ -35,3 +35,51 @@ puts colours[0]
 ages.push 0
 puts ages.sort
 puts movies.values[0]
+#Exercise2
+puts colours.last
+cities[:berlin] = "5.3 million"
+coin = coin.reverse
+#Exercise3
+puts artists[0..1]
+ages = ages.sort.reverse
+puts ages
+movies[:beuty_and_the_beast] = ["1996","2017"]
+puts movies
+#Exercise4
+people.each do |person, age|
+  if age < 30
+    puts person
+  end
+end
+puts people.values.max
+count = 0
+coin.each do |flip|
+  count = 0
+  if flip == "heads"
+    count = count + 1
+  end
+end
+puts count
+artists.pop
+cities[:toronto] = 3600000
+#exercise5
+total = 0
+cities.each do |city, population|
+  total = total + population.to_i
+end
+puts total
+people.each do |person, age|
+  if age > 30
+    puts "#{person} is old"
+  else
+    puts "#{person} is young"
+  end
+end
+puts colour[3..4]
+ages.each do |age|
+   age = age + 1
+end
+puts ages
+colours.push "pink"
+colours.push "yellow"
+puts colours
