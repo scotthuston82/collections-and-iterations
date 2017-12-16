@@ -64,8 +64,7 @@ artists.pop
 cities[:toronto] = 3600000
 #exercise5
 total = 0
-cities.each do |city, population|
-  total = total + population.to_i
+cities.each do |city, population|  total = total + population.to_i
 end
 puts total
 people.each do |person, age|
@@ -89,4 +88,15 @@ movies = {
   "2009" => ["star trek", "district 9", "avatar"],
   "2019" => ["how to train your dragon 3", "toy story 4", "star wars"]
 }
-puts movies["2009"][1]  
+puts movies["2009"][1]
+
+phone = [["1","2","3"],["4","5","6"],["7","8","9"],["*","0","#"]]
+
+puts phone[1][1]
+
+countries = [
+  can = {name: "canada",  continent: "north america",  island: false},
+  jam = {name: "jamica", continent: "north america", island: true},
+  fin = {name: "finland", continent: "europe", island: false}
+]
+puts countries[1][:island]
