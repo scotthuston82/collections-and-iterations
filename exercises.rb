@@ -94,9 +94,52 @@ phone = [["1","2","3"],["4","5","6"],["7","8","9"],["*","0","#"]]
 
 puts phone[1][1]
 
+#exercise 6
 countries = [
   can = {name: "canada",  continent: "north america",  island: false},
   jam = {name: "jamica", continent: "north america", island: true},
   fin = {name: "finland", continent: "europe", island: false}
 ]
 puts countries[1][:island]
+
+# exercise 7
+skate = "I will not skateboard in the halls"
+skateboard = []
+20.times {
+  puts skate
+  skateboard << skate
+}
+puts skateboard
+
+numbers = []
+num = 1
+50.times {
+  numbers << num
+  num = num + 1
+}
+puts numbers
+
+total = 0
+numbers.each do |num|
+  total = total + num
+end
+puts total
+
+num2 = 1
+number2 = []
+50.times {
+  number2 << num2
+  number2 << num2
+  number2 << num2
+  num2 += 1
+}
+puts number2
+
+island_countries = []
+countries.each do |countries|
+  if countries[:island] == false
+    island_countries << countries
+  end
+end
+puts countries
+puts island_countries
