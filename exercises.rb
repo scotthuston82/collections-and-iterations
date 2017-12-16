@@ -143,3 +143,16 @@ countries.each do |countries|
 end
 puts countries
 puts island_countries
+
+# exercise 8
+expenses = [58, 72, 80, 100, 220]
+sum = 0
+total = 0
+
+expenses.each do |sum|
+  total = sum + total
+end
+puts total
+
+# exercise 9
+  
