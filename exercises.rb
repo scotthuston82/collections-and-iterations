@@ -83,3 +83,10 @@ puts ages
 colours.push "pink"
 colours.push "yellow"
 puts colours
+
+movies = {
+  "1999" => ["The Matrix", "'star wars", "the mummy"],
+  "2009" => ["star trek", "district 9", "avatar"],
+  "2019" => ["how to train your dragon 3", "toy story 4", "star wars"]
+}
+puts movies["2009"][1]  
