@@ -194,3 +194,26 @@ end
 list(students)
 students.delete(:cohort2)
 list(students)
+
+# exercise 11
+range = (1..100)
+range.each do |num|
+  if num % 3 == 0 && num % 5 == 0
+    puts "bitmaker"
+  elsif num % 3 == 0
+    puts "bit"
+  elsif num % 5 == 0
+    puts "maker"
+  else
+    puts num
+  end
+end
+
+# exercise 12
+puts "how many pizzas do you want?"
+quanity = gets.chop.to_i
+quanity.times do |num|
+  puts "how many toppings on pizza #{num + 1}?"
+  toppings = gets.chop.to_i
+  puts "you ordered a pizza with #{toppings} toppings"
+end
