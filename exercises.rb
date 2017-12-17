@@ -155,4 +155,22 @@ end
 puts total
 
 # exercise 9
-  
+grocery_list = ["apples", "oranges", "steak", "cereal","milk"]
+def list(grocery_list)
+  grocery_list.each_with_index do |grocery_list|
+  puts "*  #{grocery_list}"
+  end
+end
+
+grocery_list << "rice"
+list(grocery_list)
+puts grocery_list.length
+
+if grocery_list.include? "banana"
+  puts "you need to pick up bananas"
+else
+  puts "you dont need to pick up bananas"
+end
+puts grocery_list[1]
+grocery_list.sort_by! {|word| word.downcase}
+list(grocery_list)
