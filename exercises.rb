@@ -174,3 +174,23 @@ end
 puts grocery_list[1]
 grocery_list.sort_by! {|word| word.downcase}
 list(grocery_list)
+
+# exercise 10
+students = {
+  cohort1: 34.00,
+  cohort2: 42.00,
+  cohort3: 22.00
+}
+def list(students)
+  students.each do |key, value|
+    puts "#{key}: #{value.to_s} students"
+  end
+end
+list(students)
+students[:cohort4] = 43.00
+students.map do |key, value|
+  value = value * 1.05
+end
+list(students)
+students.delete(:cohort2)
+list(students)
